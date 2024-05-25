@@ -30,7 +30,7 @@ export const deleteuser = async(req, res)=>
         let userID = req.params.id;
         let deletedUser = await deleteUser(userID);
         let users = await getAllUsersExceptHimself(id);
-        res.render('admin.views/deleteuser', { users: users });
+        res.render('admin.views/deleteUser', { users: users });
 
 
     }
