@@ -1,0 +1,66 @@
+<style>
+    .signup-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-container h2 {
+        color: #343a40;
+    }
+
+    .signup-container .form-control {
+        border-radius: 5px;
+    }
+
+    .signup-container .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        border-radius: 5px;
+    }
+
+    .signup-container .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .signup-container .bottom-text p {
+        margin-top: 10px;
+        color: #6c757d;
+    }
+
+    .signup-container .bottom-text a {
+        color: #007bff;
+    }
+
+    .signup-container .bottom-text a:hover {
+        color: #0056b3;
+    }
+</style>
+<div class="signup-container">
+    <h2 class="text-center">Create User</h2>
+    <form method="post" action="/signup">
+        <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input type="text" name="userName" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="email">Email address</label>
+            <input type="email" name="userEmail" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="mob">Mobile Number</label>
+            <input type="text" name="userMobile" class="form-control" id="mob" placeholder="Enter mobile number" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="password">Password</label>
+            <input type="password" name="userPassword" class="form-control" id="password" placeholder="Password"
+                required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block w-100">Create User</button>
+    </form>
+    
+</div>

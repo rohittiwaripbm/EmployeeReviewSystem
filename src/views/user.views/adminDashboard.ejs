@@ -1,0 +1,76 @@
+<style>
+    .card {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .container {
+        padding-top: 20px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+<div class="container" style="text-align: center;">
+    <h2>Admin DashBoard</h2>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mb-3 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Give Reviews</h5>
+                    <p class="card-text">Feel free to give reviews to the employees and create a better work environment.</p>
+                    <a href="/user/employees" class="btn btn-primary">Give Reviews</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">My Reviews</h5>
+                    <p class="card-text">See what reviews you got and work on them.</p>
+                    <a href="/user/ratings" class="btn btn-primary">See Reviews</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Change Employee's Post</h5>
+                    <p class="card-text">Make's an employee's post to Admin.</p>
+                    <a href="/admin" class="btn btn-primary">Change Post</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add a new user</h5>
+                    <p class="card-text">Create a new Employee for the Company.</p>
+                    <a href="/signup" class="btn btn-primary">Create User</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Delete an User</h5>
+                    <p class="card-text">Delete or remove user.</p>
+                    <a href="/admin/users" class="btn btn-primary">Delete User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

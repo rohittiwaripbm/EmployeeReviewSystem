@@ -1,0 +1,8 @@
+<h2>This is body of demo.ejs</h2>
+<% if (locals.userEmail) { %>
+    <h1>Welcome, <%= locals.userName %></h1>
+    <p>Your email: <%= locals.userEmail %></p>
+    <p>Your role: <%= locals.userRole %></p>
+<% } else { %>
+    <p>User information not available.</p>
+<% } %>
